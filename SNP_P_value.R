@@ -3,8 +3,7 @@ library(data.table)
 library(R.utils)
 
 setwd("d:/Wang_lab/Project/GWAS/GWAS_summary_statistics_data/")
-LD_SNPs <- c("rs2073568","rs2283106","rs2073567","rs3896063","rs500282","rs17634704",
-             "rs17634704","rs484373","rs3739406","rs2653406")
+LD_SNPs <- c("rs197412")
 
 summary_data_files <- list.files(path = ".",pattern = "h.tsv.gz",recursive = TRUE,full.names = TRUE)
 disease_types <- sapply(strsplit(summary_data_files,split = "\\/"),function(x)x[2])
